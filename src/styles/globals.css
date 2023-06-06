@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+@layer base {
+    body {
+        /* background-color: var(--bg-primary); */
+        font-family: 'Montserrat', sans-serif;
+        overflow-x: hidden;
+
+    }
+}
+
+
+/* Temas */
+/* Temas */
+:root {
+    --bg-primary: linear-gradient(180deg,
+            /* Direção do gradiente */
+            #F0F0F0 0%,
+            /* Cor no início do gradiente */
+            #D1D1D1 50%,
+            /* Cor no meio do gradiente */
+            #FAFAFA 100%
+            /* Cor no fim do gradiente */
+        );
+    --bg-secundary: #E5E7EB;
+    --bg-decoration: #F44336;
+    --text-primary: #000;
+    --text-secundary: #6E6E6E;
+    --text-secundary-dark: #748182;
+    --text-decoration: rgba(244, 67, 54, 0.7);
+    --bg-decoration-secundary: rgba(0, 0, 0, 0.7);
+    --bg-input: #cbd5e0;
+    --bg-card: #fff;
+}
+
+.dark {
+    --bg-primary: linear-gradient(180deg,
+            /* Direção do gradiente */
+            #1A1A1C 0%,
+            /* Cor no início do gradiente */
+            #2D2D2E 50%,
+            /* Cor no meio do gradiente */
+            #18181B 100%
+            /* Cor no fim do gradiente */
+        );
+    --bg-secundary: #0E0E10;
+    --bg-decoration: #F44336;
+    --text-primary: #fff;
+    --text-secundary: #6E6E6E;
+    --text-secundary-dark: #748182;
+    --text-decoration: rgba(244, 67, 54, 0.7);
+    --bg-decoration-secundary: rgba(230, 207, 205, 0.7);
+    --bg-input: #1A1A1C;
+    --bg-card: #1A1A1C;
+}
+
+
+
+/* Tamanho máximo da página padrão */
+.w-defaut {
+    width: min(1500px, 96%);
+}
+
+.divider {
+    border: 1px solid var(--bg-decoration);
+    opacity: 0.2;
+    height: 1px;
+    width: 100%;
+}
+
+/* Ainamação da home  */
+/* .typing-animation {
+    position: relative;
+    right: -200px;
+    opacity: 0;
+    animation: typing 1s ease forwards;
+}
+
+
+@keyframes typing {
+    from {
+        opacity: 0;
+        right: -200px;
+    }
+
+    to {
+        opacity: 1;
+        right: 0;
+    }
+} */
+
+/* .typing-animationMobile {
+    position: relative;
+    opacity: 0;
+    animation: typing 1s ease forwards;
+}
+
+@keyframes typing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+} */
+
+/* Overlay do modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 49;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: 500; */
+}
+
+/* Desabilitar scroll quando modal estiver aberto */
+.modal-open {
+    overflow: hidden;
+}
