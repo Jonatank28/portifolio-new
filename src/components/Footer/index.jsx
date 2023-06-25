@@ -1,5 +1,6 @@
 import { contacts } from '../Home/data'
 import { LanguageContext } from '@/contexts/languageContext'
+import Link from 'next/link'
 import { useContext } from 'react'
 
 const Footer = () => {
@@ -11,12 +12,14 @@ const Footer = () => {
                 <h1 className="text-primary text-2xl font-bold">Jonatan</h1>
                 <div className="flex gap-6 items-center ">
                     {contacts.map((contact, index) => (
-                        <div
+                        <Link
+                            href={contact.url}
+                            target="_blank"
                             key={index}
-                            className="bg-gray-700 p-2 rounded-full text-white"
+                            className="bg-gray-700/30 hover:bg-gray-700/70 transition-colors rounded-full text-white p-3 cursor-pointer"
                         >
-                            <contact.icon className="text-base" />
-                        </div>
+                            <contact.icon className="text-base cursor-pointer" />
+                        </Link>
                     ))}
                 </div>
                 <div className="flex justify-center w-screen">

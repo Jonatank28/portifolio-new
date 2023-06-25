@@ -23,7 +23,6 @@ const Project = () => {
             })
         )
     }
-
     // Função para atualizar os projetos de acordo com o idioma
     useEffect(() => {
         setProjectSelected(projects[language])
@@ -56,7 +55,7 @@ const Project = () => {
                         ))}
                     </div>
                 </div>
-                <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                     {projectSelected &&
                         projectSelected.map((project) => (
                             <Card

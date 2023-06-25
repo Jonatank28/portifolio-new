@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { LanguageContext } from '@/contexts/languageContext'
 import { linksNavBar } from './data'
 import ThemeToggle from '@/layout/ThemeToggle'
+import Link from 'next/link'
 
 const NavBar = () => {
     const { language } = useContext(LanguageContext)

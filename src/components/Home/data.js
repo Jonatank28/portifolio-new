@@ -5,13 +5,13 @@ const contacts = [
     {
         id: 1,
         name: 'E-mail',
-        url: 'jonatankalmeidakk5@gmail.com',
+        url: 'mailto:jonatankalmeidakk5@gmail.com',
         icon: FaVoicemail,
     },
     {
         id: 2,
         name: 'Telefone',
-        url: '(49) 9 8435-6670',
+        url: 'tel:+5549984356670',
         icon: FaPhone,
     },
     {

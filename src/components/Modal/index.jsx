@@ -126,7 +126,7 @@ const Modal = ({ isOpen, onClose, projectSelectedHover }) => {
                                                     ? 'Tecnologias utilizadas'
                                                     : 'Technologies used'}
                                             </h4>
-                                            <div className="flex gap-2 pt-2">
+                                            <div className="flex flex-wrap gap-2 pt-2">
                                                 {projectSelectedHover.tecs.map(
                                                     (tec, index) => (
                                                         <span
